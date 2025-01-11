@@ -1,0 +1,41 @@
+{
+  "name": "Qwerty Learner",
+  "package": "cloud.lazycat.app.qwerty-learner",
+  "description": "为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件",
+  "homepage": "",
+  "author": "RealKai42",
+  "app_features": [],
+  "subdomain": "qwerty-learner",
+  "version": "0.0.1",
+  "iconPath": "lzc-icon.png",
+  "composePath": "docker-compose.yaml",
+  "unsupported_platforms": [
+    "ios",
+    "android"
+  ],
+  "lastRouteType": "from_compose",
+  "port_mappings": {
+    "qwertylearner:image_5173_5173": {
+      "use": true,
+      "type": "https",
+      "path": "/",
+      "targetPath": "/"
+    },
+    "qwertylearner_5173_5173": {
+      "use": true,
+      "type": "http",
+      "path": "/gallery",
+      "targetPath": "/gallery"
+    }
+  },
+  "image_hausen1012_qwerty-learner_20241204": {
+    "originalImage": "hausen1012/qwerty-learner:20241204",
+    "pushTarget": "lazycat",
+    "newImageName": "registry.lazycat.cloud/mxuexxmy/hausen1012/qwerty-learner:4ec8dadea887e17e",
+    "timestamp": "2025-01-11T13:15:15.732Z"
+  },
+  "lastHttpPath": "/gallery",
+  "lastHttpService": "qwertylearner",
+  "lastHttpPort": "5173",
+  "lastHttpTargetPath": "/gallery"
+}

@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  qwertylearner:
+    image: hausen1012/qwerty-learner:20241204
+    ports:
+      - '5173:5173'

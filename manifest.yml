@@ -1,0 +1,23 @@
+lzc-sdk-version: "0.1"
+name: Qwerty Learner
+package: cloud.lazycat.app.qwerty-learner
+version: 0.0.1
+description: 为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
+homepage: ""
+author: RealKai42
+application:
+  subdomain: qwerty-learner
+  background_task: false
+  multi_instance: false
+  gpu_accel: false
+  kvm_accel: false
+  usb_accel: false
+  routes:
+    - /=http://qwertylearner.cloud.lazycat.app.qwerty-learner.lzcapp:5173/
+    - /gallery=http://qwertylearner.cloud.lazycat.app.qwerty-learner.lzcapp:5173/gallery
+services:
+  qwertylearner:
+    image: registry.lazycat.cloud/mxuexxmy/hausen1012/qwerty-learner:4ec8dadea887e17e
+unsupported_platforms:
+  - ios
+  - android
